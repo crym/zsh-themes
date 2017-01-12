@@ -9,7 +9,7 @@ else
 fi
 
 
-RPROMPT='%{$fg[yellow]%}[$(git_prompt_short_sha)]%{$reset_color%} '
+RPROMPT='%{$fg[yellow]%}$(git_prompt_short_sha)%{$reset_color%} '
 #RPROMPT='%{fg[yellow]%}$(git_prompt_short_sha)%{$reset_color%}'
 #RPROMPT='[%*]'
 
