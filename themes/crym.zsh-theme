@@ -1,4 +1,6 @@
 # -*- sh -*- vim:set ft=sh ai et sw=4 sts=4:
+source ../lib/completion.zsh
+source ../lib/git.zsh
 
 if [ "$(id -u)" = "0" ]; then
     PROMPT='%{$fg[yellow]%}%n@%m:%{[0;90m%}%~ $(git_prompt_info)%(!.#.$)%{$reset_color%} '
