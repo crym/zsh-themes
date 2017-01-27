@@ -5,7 +5,7 @@ if [ "$(id -u)" = "0" ]; then
 #elif [[ "$(hostname)" = *"vps"* ]]; then
 #    PROMPT='%{[0;36m%}%n@%m:%{[0;90m%}%~ %f%(!.#.$) '
 else
-    PROMPT='%F{cyan}%n@%m:%{[0;90m%}%~ %f%(!.#.$) '
+    PROMPT='%F{brown}%n@%m:%{[0;90m%}%~ %f%(!.#.$) '
 fi
 
 
