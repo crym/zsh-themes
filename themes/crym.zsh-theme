@@ -1,4 +1,6 @@
 # -*- sh -*- vim:set ft=sh ai et sw=4 sts=4:
+autoload -U colors
+colors
 
 if [ "$(id -u)" = "0" ]; then
     PROMPT='%F{yellow}%n@%m:%{[0;90m%}%~ %(!.#.$)%f '
