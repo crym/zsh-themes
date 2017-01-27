@@ -1,11 +1,11 @@
 # -*- sh -*- vim:set ft=sh ai et sw=4 sts=4:
 
 if [ "$(id -u)" = "0" ]; then
-    PROMPT='%f{yellow}%n@%m:%{[0;90m%}%~ %(!.#.$)%{$reset_color%} '
+    PROMPT='%F{yellow}%n@%m:%{[0;90m%}%~ %(!.#.$)%f '
 elif [[ "$(hostname)" = *"vps"* ]]; then
-    PROMPT='%{[0;36m%}%n@%m:%{[0;90m%}%~ %(!.#.$)%f aaa'
+    PROMPT='%{[0;36m%}%n@%m:%{[0;90m%}%~ %(!.#.$)%f '
 else
-    PROMPT='%{$fg[red]%}%n@%m:%{[0;90m%}%~ %(!.#.$)%{$reset_color%} '
+    PROMPT='%F{red}%n@%m:%{[0;90m%}%~ %(!.#.$)%f '
 fi
 
 
